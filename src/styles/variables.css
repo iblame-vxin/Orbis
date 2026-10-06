@@ -1,0 +1,46 @@
+:root {
+  --color-space:        #03050A;
+  --color-space-deep:   #020307;
+  --color-panel:        rgba(10, 14, 26, 0.86);
+  --color-panel-border: rgba(255, 255, 255, 0.11);
+  --color-panel-strong: rgba(15, 20, 36, 0.96);
+  --color-ink:          #E8EAF0;
+  --color-ink-muted:    #8A93A3;
+  --color-ink-dim:      #5C6370;
+  --color-accent:       #D4C4A8;
+  --color-accent-dim:   rgba(212, 196, 168, 0.4);
+  --color-focus:        #D4C4A8;
+  --color-quake:        #E85D4A;
+  --color-quake-weak:   rgba(232, 93, 74, 0.12);
+  --color-fire:         #F39C12;
+  --color-fire-weak:    rgba(243, 156, 18, 0.12);
+  --color-flood:        #3FA7D6;
+  --color-flood-weak:   rgba(63, 167, 214, 0.12);
+  --color-storm:        #BB7AE0;
+  --color-storm-weak:   rgba(187, 122, 224, 0.12);
+  --color-selected:     rgba(212, 196, 168, 0.10);
+  --color-hover:        rgba(255, 255, 255, 0.05);
+  --color-error:        #E85D4A;
+  --color-success:      #4ADE80;
+  --color-warning:      #F39C12;
+
+  --font-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-ui: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --header-height: 64px;
+  --panel-width: 360px;
+  --legend-width: 200px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+}

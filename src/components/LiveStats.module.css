@@ -1,0 +1,67 @@
+.stats {
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--color-panel-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.total {
+  font-size: 0.8125rem;
+  color: var(--color-ink-muted);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 28px;
+  padding: 3px 0;
+  border-top: 1px solid var(--color-panel-border);
+  font-size: 0.8125rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+}
+
+.quake {
+  background: #E85D4A;
+}
+
+.fire {
+  background: #F39C12;
+}
+
+.flood {
+  background: #3FA7D6;
+}
+
+.storm {
+  background: #BB7AE0;
+}
+
+.name {
+  flex: 1;
+  color: var(--color-ink-muted);
+}
+
+.count {
+  color: var(--color-ink);
+  text-align: right;
+}
+
+.updated {
+  color: var(--color-ink-muted);
+  border-top: 1px solid var(--color-panel-border);
+  padding-top: var(--space-2);
+  font-variant-numeric: tabular-nums;
+}

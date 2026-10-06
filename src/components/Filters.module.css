@@ -1,0 +1,177 @@
+.group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.legend {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-muted);
+  padding: 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-panel-border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-ink-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.55;
+}
+
+.chip.on {
+  opacity: 1;
+  color: var(--color-ink);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.quake .dot { background: var(--color-quake); }
+.fire .dot { background: var(--color-fire); }
+.flood .dot { background: var(--color-flood); }
+.storm .dot { background: var(--color-storm); }
+
+.quake.on { background: var(--color-quake-weak); border-color: var(--color-quake); }
+.fire.on { background: var(--color-fire-weak); border-color: var(--color-fire); }
+.flood.on { background: var(--color-flood-weak); border-color: var(--color-flood); }
+.storm.on { background: var(--color-storm-weak); border-color: var(--color-storm); }
+
+.segment {
+  display: flex;
+  border: 1px solid var(--color-panel-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-family: var(--font-mono);
+}
+
+.seg {
+  flex: 1;
+  min-height: 44px;
+  border: none;
+  background: transparent;
+  color: var(--color-ink-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-right: 1px solid var(--color-panel-border);
+}
+
+.seg:last-child {
+  border-right: none;
+}
+
+.seg:hover {
+  background: var(--color-hover);
+  color: var(--color-ink);
+}
+
+.segOn {
+  background: var(--color-accent);
+  color: #11131A;
+  font-weight: 600;
+}
+
+.magRow {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.magRow.disabled {
+  opacity: 0.5;
+}
+
+.magField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-ink-muted);
+}
+
+.magField input {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: var(--radius-md);
+  background: rgba(0, 0, 0, 0.38);
+  color: var(--color-ink);
+  font-weight: 500;
+  width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.magField input:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.magField input:focus-visible {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(212, 196, 168, 0.22);
+}
+
+.magField input::placeholder {
+  color: var(--color-ink-muted);
+  opacity: 1;
+}
+
+.magField input:disabled {
+  color: var(--color-ink-muted);
+  border-color: var(--color-panel-border);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: not-allowed;
+}
+
+/* Chrome paints the number-input spin buttons dark-on-dark; keep them legible. */
+.magField input::-webkit-inner-spin-button,
+.magField input::-webkit-outer-spin-button {
+  opacity: 1;
+  filter: invert(0.7);
+}
+
+.hint {
+  color: var(--color-ink-muted);
+  margin-top: 2px;
+}
+
+.hint strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.select {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-panel-border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-ink);
+  width: 100%;
+}
+
+.select option {
+  background: #0F1424;
+  color: var(--color-ink);
+}
